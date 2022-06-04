@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head><!--Need a container class-->
+<body class="container bg-primary p-2 text-dark bg-opacity-50">
+         
+      <!-- Nav bar as a heading -->
+      <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mx-auto fs-1 text-white mb-1 fw-bold text-decoration-underline">Shopping List</span>
+        </div>
+      </nav>
+    <!--Form for the user that will be able to input items-->
+    <div class="card">
+        <div class="card-body border border-dark">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group fs-4">
+                        <label for="new-item">Item</label> <!--Item and added ID so we can find is in JS-->
+                        <input type="text" class="form-control" id="new-item">
+                    </div>
+                </div>
+            </div>    
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group fs-4">
+                        <label for="quantity">Quantity</label> <!--Quantity and added ID so we can find is in J-->
+                        <input type="number" class="form-control" id="quantity">
+                    </div>
+                </div>
+            </div>
+            <!--Create another row-->
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group fs-4">
+                        <br>
+                        <label for="coupon">Coupon?</label><br> <!--Used the same name so you can only choose one radio button-->
+                        <input type="radio" name="coupon" value="Yes"> Yes</input>
+                        <input type="radio" name="coupon" value="No"> No</input>
+                    </div>
+            </div>
+            <!--Need a button to add to the list-->
+            <div>
+                <button id="add" class="btn btn-primary mt-3 border-dark">Add to List</button> <!--adding an ID to this button so we can reference it from our JS -->
+            </div>
+        </div>
+    </div>
+    
+    <!--Create a table to hold the Shopping list-->
+    <table id="list" class="table table-dark table-striped text-center">
+        <tr>
+           <th>Item</th>
+           <th>Quantity</th>
+           <th>Coupon</th>
+           <th>Delete</th>
+           
+        </tr>
+    </table>
+    
+    <!--Script file links-->
+        <script src="index.js"></script> <!--link to the JS file-->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+    
+</body>
+</html>

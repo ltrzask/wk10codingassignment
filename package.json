@@ -1,0 +1,23 @@
+{
+  "name": "wk10codingassignment",
+  "version": "1.0.0",
+  "description": "Simple Shopping list app with bootstrap, jQuery, HTML and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltrzask/wk10codingassignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ltrzask/wk10codingassignment/issues"
+  },
+  "homepage": "https://github.com/ltrzask/wk10codingassignment#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}
